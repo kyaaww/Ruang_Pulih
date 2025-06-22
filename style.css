@@ -1,0 +1,185 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('image/lao-YrDaqXxaROH9DVQa.avif') no-repeat center center fixed;
+  background-size: cover;
+  color: #4d004d;
+  line-height: 1.7;
+  backdrop-filter: brightness(0.95);
+}
+
+/* HEADER - Judul Tengah + Navigasi Pink Cerah */
+header {
+  background-color: #ffcce5;
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #b3005f;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b3005f;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffd6eb;
+  color: #660033;
+}
+
+/* HERO */
+.hero {
+  background: url('image/lao-YrDaqXxaROH9DVQa.avif') center center / cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-utama {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #ffb6c1;
+  color: #800040;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 0.3rem;
+}
+
+.btn-utama:hover {
+  background-color: #ffc0cb;
+  color: #660033;
+}
+
+/* CONTENT */
+.content {
+  background-color: rgba(255, 255, 255, 0.88);
+  margin: 2rem auto;
+  padding: 3rem;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+  font-family: 'Playfair Display', serif;
+  color: #bf4080;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #d147a3;
+}
+
+.content em {
+  color: #663366;
+  font-style: italic;
+}
+
+.content ul {
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+  list-style: disc;
+}
+
+.content p {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ffcce5;
+  text-align: center;
+  padding: 1rem;
+  color: #b3005f;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+}
